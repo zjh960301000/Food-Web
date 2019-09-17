@@ -1,0 +1,246 @@
+#one{
+    font-size: 25px;
+    text-align: center;
+    padding: 20px 0;
+}
+#one p{
+    font-size: 20px;
+}
+#one h1{
+    font-size: 50px;
+}
+.swiper-slide{
+    position: relative;
+    overflow: hidden;
+}
+.swiper-slide img{
+    width: 96%;
+    margin: 2%;
+}
+.swiper-slide:hover .text{
+    height: 57px;
+    opacity: 1;
+}
+.text{
+    position: absolute;
+    left: 2%;
+    width: 96%;
+    height: 20px;
+    background-color: rgba(0, 0, 0,0.5);
+    color: white;
+    bottom: 16px;
+    transition: all 0.5s;
+    opacity: 0;
+}
+.text p{
+    margin-left: 20px;
+}
+.swiper-container{
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+#sw{
+    text-align: center;
+    width: 100%;
+    height: 21px;
+    position: relative;
+}
+
+#sw span{
+    margin: 0 5px;
+    background-color: black;
+}
+.out{
+    width: 100%;
+    height: 80px;
+    margin: 20px 0;
+    background-color: #f0f0f0;
+}
+.picic .top_m_pic{
+    float: left;
+    width: 69.4%;
+}
+.picic .top_m_pic>div{
+    position: relative;
+    float: left;
+    width: 48%;
+    height: 229px;
+    margin: 5px;
+    overflow: hidden;
+}
+.picic .top_m_pic div img{
+    width: 100%;
+}
+
+.picic{
+    width: 1100px;
+    margin: 0 auto;
+    height: auto;
+    position: relative;
+}
+.top_b_pic img{
+    width: 100%;
+    height: 100%;
+    margin: 5px 0;
+}
+.top_b_pic{
+    float:left;
+    width: 30%;
+    height: 472px;
+    overflow: hidden;
+    position: relative;
+}
+.picTwo{
+    width: 1100px;
+    margin: auto;
+}
+
+.down_b_pic{
+    width: 45%;
+    height: 742px;
+    float: left;
+    overflow: hidden;
+    margin: 3px 5px;
+    position: relative;
+}
+.down_b_pic img{
+    width:103% ;
+    height: 110%;
+}
+.down_m_pic_one div,.down_m_pic_two div{
+    width: 48.5%;
+    height: 178px;
+    margin: 3px;
+    display: inline-block;
+    overflow: hidden;
+    position: relative;
+}
+.down_m_pic_one div img,.down_m_pic_two div img {
+    width: 100%;
+}
+.down_m_pic_one,.down_m_pic_two{
+    float: left;
+    width: 53.4%;
+    margin-left: 5px;
+}
+.empty{
+    width: 100%;
+    height: 10px;
+    position: relative;
+    clear: both;
+}
+.picic img,.picTwo img{
+    transition: all 0.5s;
+}
+.picic img:hover{
+    transform: scale(1.3);
+}
+.picTwo img:hover{
+    transform: scale(1.3);
+}
+.textPic{
+    position: absolute;
+    width: 366px;
+    height: 10px;
+    background-color: rgba(0, 0, 0,0.5);
+    color: white;
+    transition: all 0.5s;
+    opacity: 0;
+    margin: 0;
+    font-size: 16px;
+    line-height: 40px;
+    bottom: 0;
+}
+.textPic p{
+    margin: 0 16px;
+}
+.top_m_pic div:hover .textPic{
+    opacity: 1;
+    height: 40px;
+}
+.top_b_pic .textPic{
+    position: absolute;
+    width: 330px;
+    height: 10px;
+    background-color: rgba(0, 0, 0,0.5);
+    color: white;
+    transition: all 0.5s;
+    opacity: 0;
+    margin: 0;
+    font-size: 16px;
+    line-height: 40px;
+    bottom: 0;
+}
+.top_b_pic:hover .textPic{
+     opacity: 1;
+     height: 40px;
+}
+.down_b_pic .textPic{
+    position: absolute;
+    width: 495px;
+    height: 10px;
+    background-color: rgba(0, 0, 0,0.5);
+    color: white;
+    transition: all 0.5s;
+    opacity: 0;
+    margin: 0;
+    font-size: 16px;
+    line-height: 40px;
+    bottom: 0;
+}
+.down_b_pic:hover .textPic{
+    opacity: 1;
+    height: 40px;
+}
+.down_m_pic_one .textPic,.down_m_pic_two .textPic{
+    position: absolute;
+    width: 285px;
+    height: 10px;
+    background-color: rgba(0, 0, 0,0.5);
+    color: white;
+    transition: all 0.5s;
+    opacity: 0;
+    margin: 0;
+    font-size: 16px;
+    line-height: 40px;
+    bottom: 0;
+}
+.down_m_pic_one div:hover .textPic,.down_m_pic_two div:hover .textPic{
+    opacity: 1;
+    height: 40px;
+}
+.top_m_pic>div{
+    position: relative;
+    top: 300px;
+    opacity: 0;
+    transition: all 0.2s ease-out;
+}
+.top_b_pic>div{
+    position: relative;
+    top: 300px;
+    opacity: 0;
+    transition: all 0.2s ease-out;
+}
+.picTwo{
+    position: relative;
+}
+.down_b_pic>div{
+    position: relative;
+    top: 300px;
+    opacity: 0;
+    transition: all 0.2s ease-out;
+}
+.down_m_pic_one>div{
+    position: relative;
+    top: 300px;
+    opacity: 0;
+    transition: all 0.2s ease-out;
+}
+.down_m_pic_two>div{
+    position: relative;
+    top: 300px;
+    opacity: 0;
+    transition: all 0.2s ease-out;
+}

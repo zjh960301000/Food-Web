@@ -1,0 +1,64 @@
+.boxTop{
+    width: 100%;
+    height: 440px;
+    background-size: 100% 100%;
+    background-image: url("../img/news/bg.jpe");
+    overflow: hidden;
+}
+.boxTop h3{
+    margin: 186px auto auto;
+    color: white;
+    font-size: 45px;
+    width: 193px;
+}
+.boxTop p {
+    margin: 25px auto 0;
+    width: 145px;
+    color: white;
+    font-size: 15px;
+    font-weight: 100;
+}
+#mid{
+    margin: 108px auto 70px;
+    width: 1039px;
+    overflow: hidden;
+}
+#mid a{
+    display: inline-block;
+    border: 1px solid rgb(238, 238, 238);
+    text-decoration: none;
+    color: black;
+    width: 513px;
+    height: 174px;
+    float: left;
+}
+#mid a img {
+    width: 200px;
+    height: 142px;
+    float: left;
+    margin: 15px 0 15px 15px;
+}
+#mid a div {
+    display: inline-block;
+    float: left;
+    width: 260px;
+    height: 115px;
+    margin: 18px;
+    color: rgb(140, 144, 144);
+}
+#mid a div h4 {
+    font-size: 18px;
+    line-height: 1.5em;
+    color: rgb(133, 137, 137);
+}
+#mid a div p {
+    font-size: 14px;
+    line-height: 1.5em;
+}
+#down{
+    margin: 0 auto 126px;
+    width: 80px;
+    height: 15px;
+    font-size: 18px;
+    color: rgb(140, 144, 144);
+}

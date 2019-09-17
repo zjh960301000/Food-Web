@@ -1,0 +1,176 @@
+#one{
+    width: 100%;
+    height: 546px;
+    background-image: url('../img/index/bg3.jpg');
+    background-size: 100% 100%;
+    position: relative;
+    background-attachment: fixed;
+    margin-bottom: 55px;
+}
+#one .cover {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+}
+#one .cover h2 {
+    padding-top: 80px;
+    font-size: 35px;
+    margin: 0 auto 48px;
+    width: 220px;
+}
+#one .cover p {
+    margin: 0 auto 14px;
+    font-size: 14px;
+}
+#one .cover p:nth-of-type(1){
+    width: 870px;
+}
+#one .cover p:nth-of-type(2){
+    width: 400px;
+    margin-bottom: 120px;
+}
+.title{
+    width: 1038px;
+    margin: auto;
+}
+.title div{
+    float: left;
+    width: 280px;
+    text-align: center;
+}
+.title div:nth-of-type(2){
+    margin: 0 85px;
+}
+.title h1{
+    font-size: 50px;
+}
+.title span{
+    font-size: 14px;
+    display: inline-block;
+    margin-bottom: 5px;
+}
+#two{
+    width: 1000px;
+    margin: 0 auto 57px;
+    overflow: hidden;
+}
+#two img{
+    width: 480px;
+    height: 330px;
+    margin-right: 45px;
+    float: left;
+    text-align: center;
+}
+#two div{
+    width: 387px;
+    float: left;
+}
+#two h2{
+    margin-bottom: 45px;
+    margin-top: 10px;
+}
+#two p{
+    line-height: 2em;
+}
+#two .twoUp {
+    width: 1000px;
+    margin: 0 auto 117px;
+    overflow: hidden;
+    position: relative;
+}
+#two .twoUp img{
+    position: relative;
+    left: -300px;
+    transition: all 0.2s ease-out;
+    opacity: 0;
+}
+#two .twoUp div{
+    position: relative;
+    left: 300px;
+    transition: all 0.2s ease-out;
+    opacity: 0;
+}
+#two .twoDown {
+    width: 1000px;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+}
+#two .twoDown img{
+    position: relative;
+    left: -300px;
+    transition: all 0.2s ease-out;
+    opacity: 0;
+}
+#two .twoDown div{
+    position: relative;
+    left: 300px;
+    transition: all 0.2s ease-out;
+    opacity: 0;
+}
+
+
+
+
+
+#three{
+    width: 100%;
+    height: 619px;
+    background-image: url('../img/index/bg4.jpg');
+    position: relative;
+    background-attachment: fixed;
+    clear: both;
+    background-repeat: no-repeat;
+    background-size: 1884px 100%;
+}
+#three .threeOn{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    color: white;
+    text-align: center;
+    font-weight: 100;
+}
+#three h2:nth-of-type(1){
+    font-size: 28px;
+    margin: 0 0 18px;
+    padding: 153px 0 0;
+}
+#three h2:nth-of-type(2){
+    font-size: 28px;
+    margin: 0 0 10px;
+}
+#three p:nth-of-type(1){
+    font-size: 28px;
+    margin: 0 0 15px;
+}
+#three p:nth-of-type(2){
+    font-size: 28px;
+    margin: 0 0 13px;
+}
+.spanOne{
+    font-size: 50px;
+}
+.spanTwo{
+    font-size: 35px;
+}
+#three h3{
+    margin: 0 0 40px;
+}
+#three .threeOn div{
+    width: 1000px;
+    height: 1px;
+    background-color: white;
+    margin: 0 auto 42px;
+}
+#three h4{
+    font-size: 16px;
+    margin: 0 0 12px;
+}

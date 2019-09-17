@@ -1,0 +1,47 @@
+#all{
+    width: 985px;
+    margin: 0 auto;
+}
+.one{
+    margin-bottom: 50px;
+}
+.two{
+    width: 985px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.two img{
+    float: left;
+    width: 475px;
+    height: 300px;
+}
+.twoP{
+    margin-left: 35px;
+    width: 475px;
+    height: 300px;
+    float: left;
+}
+.two p{
+    text-indent: 2em;
+    font-size: 15px;
+    color: grey;
+    line-height: 25px;
+}
+.three{
+    margin: 50px auto 80px;
+    width: 985px;
+}
+.three p{
+    color: grey;
+    font-size: 15px;
+    text-indent: 2em;
+    line-height: 25px;
+}
+.three img:nth-of-type(1){
+    width: 100%;
+    margin: 30px auto 10px;
+}
+.three img:nth-of-type(2){
+    width: 100%;
+    margin: 0 auto 20px;
+}

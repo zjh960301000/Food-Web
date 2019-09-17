@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>goods2</title>
+    <script src="js/jquery.js"></script>
+    <link rel="stylesheet" href="css/head.css">
+    <link rel="stylesheet" href="css/goods1.css">
+</head>
+<body>
+<div id = headTop>
+    <div id = 'head'>
+        <a href="index.html">
+            <img src="img/index/logo.png" alt="零食侠">
+        </a>
+        <h3>一刻钟 • 带你的味蕾环游世界</h3>
+        <ul id="list">
+            <li><a href="index.html">首页</a></li>
+            <li><a href="sell.html">产品贩售</a></li>
+            <li><a href="news.html">公司动态</a></li>
+            <li><a href="about.html">关于我们</a></li>
+            <li><a href="contact.html">联系我们</a></li>
+        </ul>
+    </div>
+</div>
+<div id="buy">
+    <p>零食侠 带你的味蕾环游世界</p>
+    <div class="buyBox">
+        <p>逛吃逛吃礼包</p>
+        <p style="margin-bottom: 0">¥<span style="color: orange">288</span></p>
+        <div id="num">
+            <span class="count">-</span>
+            <input type="text" value="1" class="in">
+            <span class="add">+</span>
+        </div>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <div class="buyBtn">立即购买</div>
+    </div>
+    <div id="pic"><img src="img/goods2/1.jpg" alt=""></div>
+</div>
+<div class="allPic">
+    <h2>商品详情</h2>
+    <p>Goods details</p>
+    <img src="img/goods2/2.jpg" alt="">
+    <img src="img/goods2/3.jpg" alt="">
+    <img src="img/goods2/11.jpg" alt="">
+    <img src="img/goods2/22.jpg" alt="">
+    <img src="img/goods2/111.jpg" alt="">
+    <img src="img/goods2/222.jpg" alt="">
+    <img src="img/goods2/333.jpg" alt="">
+    <img src="img/goods2/444.jpg" alt="">
+    <img src="img/goods2/555.jpg" alt="">
+    <div style="text-align: center">
+        <img src="img/goods2/666.png" alt="">
+    </div>
+</div>
+<div id="foot">
+    <p>Copyright © 2015-2016 成都零食侠科技有限公司。蜀ICP备 15027883号-1</p>
+</div>
+
+<div class="bigBox">
+    <div id="wantBuy">
+        <p>确认订单</p>
+        <p>订单列表</p>
+        <div class="line"></div>
+        <table cellspacing="0">
+            <thead>
+            <tr>
+                <th>名称</th>
+                <th>数量</th>
+                <th>单价</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>逛吃逛吃礼包</td>
+                <td>1</td>
+                <td>¥288</td>
+            </tr>
+            </tbody>
+        </table>
+        <p>包邮</p>
+        <p>¥<span class="price">288</span></p>
+        <div id="address">
+            <span>姓名:<span>*</span></span><input type="text">
+            <br/>
+            <span>邮箱:<span>*</span></span><input type="text">
+            <br/>
+            <span>手机号:<span>*</span></span><input type="text">
+            <br/>
+            <span>地址:<span>*</span></span>
+            <select name="" id="city">
+                <option>—请选择省/城市—</option>
+                <option value="北京市">北京市</option>
+                <option value="上海市">上海市</option>
+                <option value="广州省">广州省</option>
+                <option value="深圳市">深圳市</option>
+            </select>
+            <br/>
+            <select id="town">
+                <option>—请选择所在省份和地区—</option>
+            </select>
+            <br/>
+            <input type="text" id="village">
+            <br/>
+            <span>邮编:</span><input type="text">
+            <br/>
+            <span>备注:</span><textarea></textarea>
+        </div>
+        <div class="btn">
+            <div class="btnDetermine">确认订单</div>
+            <div class="btnCancel">取消订单</div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(function () {
+        var arr=[['—请选择所在省份和地区—','朝阳区','东城区','西城区','海淀区','宣武区','丰台区'],
+            ['—请选择所在省份和地区—','宝山区','长宁区','闵行区','杨浦区','黄浦区','虹口区','静安区'],
+            ['—请选择所在省份和地区—','广州市','珠海市','汕头市','揭阳市','潮州市','湛江市'],
+            ['—请选择所在省份和地区—','福田区','南山区','宝安区','龙岗区','盐田区','罗湖区']];
+        var num = $('.in').val();
+        $('.buyBtn').off('click').on('click',function () {
+            $('.bigBox').css({'display':'block'});
+            $('table').find('td').eq(1).html(num);
+            $('.price').html(num*288)
+        });
+        $('.btnDetermine').off('click').on('click',function () {
+            $('.bigBox').css({'display':'none'})
+        });
+        $('.btnCancel').off('click').on('click',function () {
+            $('.bigBox').css({'display':'none'})
+        });
+        $('.add').off('click').on('click',function () {
+            $('.in').attr('value',function () {
+                return ++num
+            })
+        });
+        $('.count').off('click').on('click',function () {
+            $('.in').attr('value',function () {
+                if(num<=0){
+                    return 0
+                }
+                return --num
+            })
+        });
+        $('#city').change(function () {
+            var index = $(this).get(0).selectedIndex;
+            $('#town').find('option').remove();
+            for(var i=0;i<arr[index-1].length;i++){
+                function x(i){
+                    $('#town').append('<option>'+arr[index-1][i]+'</option>')
+                }x(i)
+            }
+        })
+    })
+</script>
+</body>
+</html>

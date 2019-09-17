@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+html,body{
+    height: 100%;
+}
+a{
+    text-decoration: inherit;
+    color: inherit;
+}
+#headTop{
+    background-color:#FFd73a;
+}
+#head{
+    width: 1000px;
+    margin: 0 auto;
+    position: relative;
+    padding-top: 15px;
+}
+#head img{
+    width: 200px;
+}
+#head h3{
+    padding: 10px 0;
+}
+#list{
+    color: white;
+    text-align: right;
+    position: absolute;
+    right: 0;
+    top: 50px;
+    list-style: none;
+}
+#list li{
+    float: left;
+    width: 100px;
+}
+#foot{
+    width: 100%;
+    height: 43px;
+    background-color: black;
+    color: darkgray;
+    text-align: center;
+    position: relative;
+    padding-top: 3%;
+    font-size: 13px;
+    line-height: 1.7em;
+}
+#foot p{
+    height: 22px;
+}
